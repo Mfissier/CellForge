@@ -1,3 +1,6 @@
 commit_msg.txt
 __pycache__/
 *.py[cod]
+node_modules/
+**/node_modules/
+notebook_agend.md

@@ -1,0 +1,3 @@
+# CellForge Python Requirements
+# No external Python dependencies required - uses built-in ctypes
+# Python 3.7+ required for pathlib features 
