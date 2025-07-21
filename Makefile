@@ -6,10 +6,11 @@ OUT_SO = $(OUT_DIR)/libcellforge.so
 STATIC_OUT = lib/libcellforge.a
 EXEC_TEST = tests/exec_test
 
-all:
+all: shared
+
+shared:
 	mkdir -p $(OUT_DIR)
 	$(CC) $(CFLAGS) -shared -o $(OUT_SO) $(SRC)
-
 static:
 	mkdir -p lib
 	$(CC) -c $(CFLAGS) $(SRC) -o lib/cell.o
