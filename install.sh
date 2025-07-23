@@ -31,21 +31,12 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     xcode-select --install 2>/dev/null || true
     
     # Install language runtimes via Homebrew
-    brew install node python3 php ruby
+    brew install python3 
     
     echo "✅ macOS packages installed successfully"
     
 else
     echo "❌ Unsupported OS: $OSTYPE"
-    echo "Please install manually: gcc, g++, node, python3, php, ruby"
+    echo "Please install manually: python3"
     exit 1
 fi
-
-# Install Node.js dependencies
-echo "📦 Installing Node.js dependencies..."
-cd bindings/node
-npm install
-cd ../..
-
-echo "🎉 All dependencies installed successfully!"
-echo "Now run: make && make test" 
