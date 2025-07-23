@@ -3,4 +3,4 @@ __pycache__/
 *.py[cod]
 node_modules/
 **/node_modules/
-notebook_agend.mdnotebook_agent.md
+notebook_agent.md
