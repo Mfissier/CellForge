@@ -4,7 +4,7 @@ SRC = src/cell.c
 OUT_DIR = lib
 OUT_SO = $(OUT_DIR)/libcellforge.so
 STATIC_OUT = lib/libcellforge.a
-EXEC_TEST = tests/exec_test
+EXEC_TEST = tests/exec
 
 all: shared
 
@@ -44,6 +44,7 @@ clean:
 	rm -rf $(OUT_DIR)
 	rm -rf /tests/exec_test
 # Force rebuild
+
 rebuild: clean shared
 
 .PHONY: all shared static install test test-quick dev-setup clean_static clean clean-all rebuild
